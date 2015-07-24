@@ -13,18 +13,9 @@
 		01647BE61B6235F500A777AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01647BE41B6235F500A777AE /* Main.storyboard */; };
 		01647BE81B6235F500A777AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01647BE71B6235F500A777AE /* Images.xcassets */; };
 		01647BEB1B6235F500A777AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01647BE91B6235F500A777AE /* LaunchScreen.xib */; };
-		01647BF71B6235F500A777AE /* LeftSlideViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01647BF61B6235F500A777AE /* LeftSlideViewControllerTests.m */; };
+		01647C051B6236AC00A777AE /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01647C021B6236AC00A777AE /* LeftSlideViewController.m */; };
+		01647C061B6236AC00A777AE /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 01647C041B6236AC00A777AE /* UIView_extra.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		01647BF11B6235F500A777AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 01647BCF1B6235F500A777AE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01647BD61B6235F500A777AE;
-			remoteInfo = LeftSlideViewController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01647BD71B6235F500A777AE /* LeftSlideViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftSlideViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +28,14 @@
 		01647BE51B6235F500A777AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01647BE71B6235F500A777AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01647BEA1B6235F500A777AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		01647BF01B6235F500A777AE /* LeftSlideViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeftSlideViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01647BF51B6235F500A777AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01647BF61B6235F500A777AE /* LeftSlideViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewControllerTests.m; sourceTree = "<group>"; };
+		01647C011B6236AC00A777AE /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		01647C021B6236AC00A777AE /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		01647C031B6236AC00A777AE /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		01647C041B6236AC00A777AE /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01647BD41B6235F500A777AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01647BED1B6235F500A777AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				01647BD91B6235F500A777AE /* LeftSlideViewController */,
-				01647BF31B6235F500A777AE /* LeftSlideViewControllerTests */,
 				01647BD81B6235F500A777AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				01647BD71B6235F500A777AE /* LeftSlideViewController.app */,
-				01647BF01B6235F500A777AE /* LeftSlideViewControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +64,7 @@
 		01647BD91B6235F500A777AE /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				01647C001B62361F00A777AE /* Classes */,
 				01647BDE1B6235F500A777AE /* AppDelegate.h */,
 				01647BDF1B6235F500A777AE /* AppDelegate.m */,
 				01647BE11B6235F500A777AE /* ViewController.h */,
@@ -102,22 +86,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01647BF31B6235F500A777AE /* LeftSlideViewControllerTests */ = {
+		01647C001B62361F00A777AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				01647BF61B6235F500A777AE /* LeftSlideViewControllerTests.m */,
-				01647BF41B6235F500A777AE /* Supporting Files */,
+				01647C011B6236AC00A777AE /* LeftSlideViewController.h */,
+				01647C021B6236AC00A777AE /* LeftSlideViewController.m */,
+				01647C031B6236AC00A777AE /* UIView_extra.h */,
+				01647C041B6236AC00A777AE /* UIView_extra.m */,
 			);
-			path = LeftSlideViewControllerTests;
-			sourceTree = "<group>";
-		};
-		01647BF41B6235F500A777AE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				01647BF51B6235F500A777AE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -139,24 +117,6 @@
 			productReference = 01647BD71B6235F500A777AE /* LeftSlideViewController.app */;
 			productType = "com.apple.product-type.application";
 		};
-		01647BEF1B6235F500A777AE /* LeftSlideViewControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 01647BFD1B6235F500A777AE /* Build configuration list for PBXNativeTarget "LeftSlideViewControllerTests" */;
-			buildPhases = (
-				01647BEC1B6235F500A777AE /* Sources */,
-				01647BED1B6235F500A777AE /* Frameworks */,
-				01647BEE1B6235F500A777AE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				01647BF21B6235F500A777AE /* PBXTargetDependency */,
-			);
-			name = LeftSlideViewControllerTests;
-			productName = LeftSlideViewControllerTests;
-			productReference = 01647BF01B6235F500A777AE /* LeftSlideViewControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +128,6 @@
 				TargetAttributes = {
 					01647BD61B6235F500A777AE = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					01647BEF1B6235F500A777AE = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 01647BD61B6235F500A777AE;
 					};
 				};
 			};
@@ -189,7 +145,6 @@
 			projectRoot = "";
 			targets = (
 				01647BD61B6235F500A777AE /* LeftSlideViewController */,
-				01647BEF1B6235F500A777AE /* LeftSlideViewControllerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +160,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01647BEE1B6235F500A777AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,29 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01647C061B6236AC00A777AE /* UIView_extra.m in Sources */,
 				01647BE31B6235F500A777AE /* ViewController.m in Sources */,
 				01647BE01B6235F500A777AE /* AppDelegate.m in Sources */,
 				01647BDD1B6235F500A777AE /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01647BEC1B6235F500A777AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01647BF71B6235F500A777AE /* LeftSlideViewControllerTests.m in Sources */,
+				01647C051B6236AC00A777AE /* LeftSlideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		01647BF21B6235F500A777AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 01647BD61B6235F500A777AE /* LeftSlideViewController */;
-			targetProxy = 01647BF11B6235F500A777AE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01647BE41B6235F500A777AE /* Main.storyboard */ = {
@@ -363,40 +297,6 @@
 			};
 			name = Release;
 		};
-		01647BFE1B6235F500A777AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LeftSlideViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeftSlideViewController.app/LeftSlideViewController";
-			};
-			name = Debug;
-		};
-		01647BFF1B6235F500A777AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LeftSlideViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeftSlideViewController.app/LeftSlideViewController";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,14 +314,6 @@
 			buildConfigurations = (
 				01647BFB1B6235F500A777AE /* Debug */,
 				01647BFC1B6235F500A777AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		01647BFD1B6235F500A777AE /* Build configuration list for PBXNativeTarget "LeftSlideViewControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01647BFE1B6235F500A777AE /* Debug */,
-				01647BFF1B6235F500A777AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
